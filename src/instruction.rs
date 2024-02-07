@@ -34,7 +34,8 @@ impl MovieInstruction {
             0 => Self::AddMovieReview {
                 title: payload.title,
                 rating: payload.rating,
-                description: payload.description },
+                description: payload.description 
+            },
             _ => return Err(ProgramError::InvalidInstructionData)
         })
     }
